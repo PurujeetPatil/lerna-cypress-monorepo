@@ -41,7 +41,7 @@ module.exports = {
 			},
 			{
 				test: /\.tsx?$/,
-				use: "ts-loader",
+				use: ["@jsdevtools/coverage-istanbul-loader", "ts-loader"],
 				exclude: /node_modules/,
 			},
 		],

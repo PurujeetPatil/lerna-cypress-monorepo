@@ -1,9 +1,15 @@
 import React from "react";
 
-type Props = {};
+type Props = {
+	broCode?: string;
+};
 
-function Component({}: Props) {
-	return <div>Component</div>;
+function Component({ broCode }: Props) {
+	if (broCode) {
+		return <h1>{broCode}</h1>;
+	} else {
+		return <div>You aint a bro</div>;
+	}
 }
 
 export default Component;
