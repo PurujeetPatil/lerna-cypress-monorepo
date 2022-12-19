@@ -1,0 +1,339 @@
+{
+  "D:\\Coding\\react\\lerna-cypress\\cypress\\support\\commands.ts": {
+    "path": "D:\\Coding\\react\\lerna-cypress\\cypress\\support\\commands.ts",
+    "statementMap": {},
+    "fnMap": {},
+    "branchMap": {},
+    "s": {},
+    "f": {},
+    "b": {},
+    "inputSourceMap": {
+      "version": 3,
+      "file": "D:\\Coding\\react\\lerna-cypress\\cypress\\support\\commands.ts",
+      "sourceRoot": "",
+      "sources": [
+        "D:\\Coding\\react\\lerna-cypress\\cypress\\support\\commands.ts"
+      ],
+      "names": [],
+      "mappings": ";AAAA,iCAAiC;AACjC,kDAAkD;AAClD,4CAA4C;AAC5C,+CAA+C;AAC/C,qBAAqB;AACrB,EAAE;AACF,4CAA4C;AAC5C,kCAAkC;AAClC,wCAAwC;AACxC,kDAAkD;AAClD,EAAE;AACF,EAAE;AACF,iCAAiC;AACjC,8DAA8D;AAC9D,EAAE;AACF,EAAE;AACF,gCAAgC;AAChC,yFAAyF;AACzF,EAAE;AACF,EAAE;AACF,+BAA+B;AAC/B,6FAA6F;AAC7F,EAAE;AACF,EAAE;AACF,gDAAgD;AAChD,6EAA6E;AAC7E,EAAE;AACF,mBAAmB;AACnB,wBAAwB;AACxB,4BAA4B;AAC5B,gEAAgE;AAChE,kFAAkF;AAClF,qFAAqF;AACrF,8GAA8G;AAC9G,QAAQ;AACR,MAAM;AACN,IAAI",
+      "sourcesContent": [
+        "/// <reference types=\"cypress\" />\r\n// ***********************************************\r\n// This example commands.ts shows you how to\r\n// create various custom commands and overwrite\r\n// existing commands.\r\n//\r\n// For more comprehensive examples of custom\r\n// commands please read more here:\r\n// https://on.cypress.io/custom-commands\r\n// ***********************************************\r\n//\r\n//\r\n// -- This is a parent command --\r\n// Cypress.Commands.add('login', (email, password) => { ... })\r\n//\r\n//\r\n// -- This is a child command --\r\n// Cypress.Commands.add('drag', { prevSubject: 'element'}, (subject, options) => { ... })\r\n//\r\n//\r\n// -- This is a dual command --\r\n// Cypress.Commands.add('dismiss', { prevSubject: 'optional'}, (subject, options) => { ... })\r\n//\r\n//\r\n// -- This will overwrite an existing command --\r\n// Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })\r\n//\r\n// declare global {\r\n//   namespace Cypress {\r\n//     interface Chainable {\r\n//       login(email: string, password: string): Chainable<void>\r\n//       drag(subject: string, options?: Partial<TypeOptions>): Chainable<Element>\r\n//       dismiss(subject: string, options?: Partial<TypeOptions>): Chainable<Element>\r\n//       visit(originalFn: CommandOriginalFn, url: string, options: Partial<VisitOptions>): Chainable<Element>\r\n//     }\r\n//   }\r\n// }"
+      ]
+    },
+    "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
+    "hash": "a1b20076667e927c3cfa7de69912d3b04472c80b"
+  },
+  "D:\\Coding\\react\\lerna-cypress\\cypress\\support\\component.ts": {
+    "path": "D:\\Coding\\react\\lerna-cypress\\cypress\\support\\component.ts",
+    "statementMap": {
+      "0": {
+        "start": {
+          "line": 21,
+          "column": 0
+        },
+        "end": {
+          "line": 21,
+          "column": 37
+        }
+      }
+    },
+    "fnMap": {},
+    "branchMap": {},
+    "s": {
+      "0": 16
+    },
+    "f": {},
+    "b": {},
+    "inputSourceMap": {
+      "version": 3,
+      "file": "D:\\Coding\\react\\lerna-cypress\\cypress\\support\\component.ts",
+      "sourceRoot": "",
+      "sources": [
+        "D:\\Coding\\react\\lerna-cypress\\cypress\\support\\component.ts"
+      ],
+      "names": [],
+      "mappings": "AAAA,8DAA8D;AAC9D,qDAAqD;AACrD,+CAA+C;AAC/C,EAAE;AACF,wDAAwD;AACxD,kCAAkC;AAClC,EAAE;AACF,uDAAuD;AACvD,+CAA+C;AAC/C,sCAAsC;AACtC,EAAE;AACF,0BAA0B;AAC1B,sCAAsC;AACtC,8DAA8D;AAE9D,0CAA0C;AAC1C,OAAO,YAAY,CAAC;AACpB,OAAO,gCAAgC,CAAC;AAExC,6CAA6C;AAC7C,wBAAwB;AAExB,OAAO,EAAE,KAAK,EAAE,MAAM,iBAAiB,CAAC;AAcxC,OAAO,CAAC,QAAQ,CAAC,GAAG,CAAC,OAAO,EAAE,KAAK,CAAC,CAAC;AAErC,eAAe;AACf,4BAA4B",
+      "sourcesContent": [
+        "// ***********************************************************\r\n// This example support/component.ts is processed and\r\n// loaded automatically before your test files.\r\n//\r\n// This is a great place to put global configuration and\r\n// behavior that modifies Cypress.\r\n//\r\n// You can change the location of this file or turn off\r\n// automatically serving support files with the\r\n// 'supportFile' configuration option.\r\n//\r\n// You can read more here:\r\n// https://on.cypress.io/configuration\r\n// ***********************************************************\r\n\r\n// Import commands.js using ES2015 syntax:\r\nimport \"./commands\";\r\nimport \"@cypress/code-coverage/support\";\r\n\r\n// Alternatively you can use CommonJS syntax:\r\n// require('./commands')\r\n\r\nimport { mount } from \"cypress/react18\";\r\n\r\n// Augment the Cypress namespace to include type definitions for\r\n// your custom command.\r\n// Alternatively, can be defined in cypress/support/component.d.ts\r\n// with a <reference path=\"./component\" /> at the top of your spec.\r\ndeclare global {\r\n\tnamespace Cypress {\r\n\t\tinterface Chainable {\r\n\t\t\tmount: typeof mount;\r\n\t\t}\r\n\t}\r\n}\r\n\r\nCypress.Commands.add(\"mount\", mount);\r\n\r\n// Example use:\r\n// cy.mount(<MyComponent />)\r\n"
+      ]
+    },
+    "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
+    "hash": "417cd5f3db3a57fc27f539a298cfda1fd742a426"
+  },
+  "D:\\Coding\\react\\lerna-cypress\\packages\\Component\\src\\Component.tsx": {
+    "path": "D:\\Coding\\react\\lerna-cypress\\packages\\Component\\src\\Component.tsx",
+    "statementMap": {
+      "0": {
+        "start": {
+          "line": 3,
+          "column": 18
+        },
+        "end": {
+          "line": 3,
+          "column": 28
+        }
+      },
+      "1": {
+        "start": {
+          "line": 4,
+          "column": 4
+        },
+        "end": {
+          "line": 9,
+          "column": 5
+        }
+      },
+      "2": {
+        "start": {
+          "line": 5,
+          "column": 8
+        },
+        "end": {
+          "line": 5,
+          "column": 49
+        }
+      },
+      "3": {
+        "start": {
+          "line": 8,
+          "column": 8
+        },
+        "end": {
+          "line": 8,
+          "column": 59
+        }
+      }
+    },
+    "fnMap": {
+      "0": {
+        "name": "Component",
+        "decl": {
+          "start": {
+            "line": 2,
+            "column": 9
+          },
+          "end": {
+            "line": 2,
+            "column": 18
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 2,
+            "column": 23
+          },
+          "end": {
+            "line": 10,
+            "column": 1
+          }
+        },
+        "line": 2
+      }
+    },
+    "branchMap": {
+      "0": {
+        "loc": {
+          "start": {
+            "line": 4,
+            "column": 4
+          },
+          "end": {
+            "line": 9,
+            "column": 5
+          }
+        },
+        "type": "if",
+        "locations": [
+          {
+            "start": {
+              "line": 4,
+              "column": 4
+            },
+            "end": {
+              "line": 9,
+              "column": 5
+            }
+          },
+          {
+            "start": {
+              "line": 4,
+              "column": 4
+            },
+            "end": {
+              "line": 9,
+              "column": 5
+            }
+          }
+        ],
+        "line": 4
+      }
+    },
+    "s": {
+      "0": 24,
+      "1": 24,
+      "2": 16,
+      "3": 8
+    },
+    "f": {
+      "0": 24
+    },
+    "b": {
+      "0": [
+        16,
+        8
+      ]
+    },
+    "inputSourceMap": {
+      "version": 3,
+      "file": "D:\\Coding\\react\\lerna-cypress\\packages\\Component\\src\\Component.tsx",
+      "sourceRoot": "",
+      "sources": [
+        "D:\\Coding\\react\\lerna-cypress\\packages\\Component\\src\\Component.tsx"
+      ],
+      "names": [],
+      "mappings": ";AAMA,SAAS,SAAS,CAAC,EAAkB;QAAhB,OAAO,aAAA;IAC3B,IAAI,OAAO,EAAE;QACZ,OAAO,uBAAK,OAAO,GAAM,CAAC;KAC1B;SAAM;QACN,OAAO,2CAAyB,CAAC;KACjC;AACF,CAAC;AAED,eAAe,SAAS,CAAC",
+      "sourcesContent": [
+        "import React from \"react\";\r\n\r\ntype Props = {\r\n\tbroCode?: string;\r\n};\r\n\r\nfunction Component({ broCode }: Props) {\r\n\tif (broCode) {\r\n\t\treturn <h1>{broCode}</h1>;\r\n\t} else {\r\n\t\treturn <div>You aint a bro</div>;\r\n\t}\r\n}\r\n\r\nexport default Component;\r\n"
+      ]
+    },
+    "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
+    "hash": "7f74c124349099ccfc9c1538a7b6596c6add0f24"
+  },
+  "D:\\Coding\\react\\lerna-cypress\\packages\\Component\\src\\__tests__\\Test2.cy.tsx": {
+    "path": "D:\\Coding\\react\\lerna-cypress\\packages\\Component\\src\\__tests__\\Test2.cy.tsx",
+    "statementMap": {
+      "0": {
+        "start": {
+          "line": 3,
+          "column": 0
+        },
+        "end": {
+          "line": 13,
+          "column": 3
+        }
+      },
+      "1": {
+        "start": {
+          "line": 4,
+          "column": 4
+        },
+        "end": {
+          "line": 8,
+          "column": 7
+        }
+      },
+      "2": {
+        "start": {
+          "line": 5,
+          "column": 22
+        },
+        "end": {
+          "line": 5,
+          "column": 36
+        }
+      },
+      "3": {
+        "start": {
+          "line": 6,
+          "column": 8
+        },
+        "end": {
+          "line": 6,
+          "column": 56
+        }
+      },
+      "4": {
+        "start": {
+          "line": 7,
+          "column": 8
+        },
+        "end": {
+          "line": 7,
+          "column": 39
+        }
+      }
+    },
+    "fnMap": {
+      "0": {
+        "name": "(anonymous_0)",
+        "decl": {
+          "start": {
+            "line": 3,
+            "column": 24
+          },
+          "end": {
+            "line": 3,
+            "column": 25
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 3,
+            "column": 36
+          },
+          "end": {
+            "line": 13,
+            "column": 1
+          }
+        },
+        "line": 3
+      },
+      "1": {
+        "name": "(anonymous_1)",
+        "decl": {
+          "start": {
+            "line": 4,
+            "column": 22
+          },
+          "end": {
+            "line": 4,
+            "column": 23
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 4,
+            "column": 34
+          },
+          "end": {
+            "line": 8,
+            "column": 5
+          }
+        },
+        "line": 4
+      }
+    },
+    "branchMap": {},
+    "s": {
+      "0": 16,
+      "1": 16,
+      "2": 16,
+      "3": 16,
+      "4": 16,
+      "5": 11,
+      "6": 8,
+      "7": 8
+    },
+    "f": {
+      "0": 16,
+      "1": 16,
+      "2": 8
+    },
+    "b": {},
+    "inputSourceMap": {
+      "version": 3,
+      "file": "D:\\Coding\\react\\lerna-cypress\\packages\\Component\\src\\__tests__\\Test2.cy.tsx",
+      "sourceRoot": "",
+      "sources": [
+        "D:\\Coding\\react\\lerna-cypress\\packages\\Component\\src\\__tests__\\Test2.cy.tsx"
+      ],
+      "names": [],
+      "mappings": ";AACA,OAAO,SAAS,MAAM,cAAc,CAAC;AAErC,QAAQ,CAAC,aAAa,EAAE;IACvB,EAAE,CAAC,aAAa,EAAE;QACjB,IAAM,OAAO,GAAG,cAAc,CAAC;QAC/B,EAAE,CAAC,KAAK,CAAC,KAAC,SAAS,IAAC,OAAO,EAAE,OAAO,GAAI,CAAC,CAAC;QAC1C,EAAE,CAAC,GAAG,CAAC,IAAI,CAAC,CAAC,QAAQ,CAAC,OAAO,CAAC,CAAC;IAChC,CAAC,CAAC,CAAC;IAEH,4BAA4B;IAC5B,4BAA4B;IAC5B,6CAA6C;IAC7C,MAAM;AACP,CAAC,CAAC,CAAC",
+      "sourcesContent": [
+        "import React from \"react\";\r\nimport Component from \"../Component\";\r\n\r\ndescribe(\"Test2.cy.ts\", () => {\r\n\tit(\"playground1\", () => {\r\n\t\tconst broCode = \"Bros b4 Hoes\";\r\n\t\tcy.mount(<Component broCode={broCode} />);\r\n\t\tcy.get(\"h1\").contains(broCode);\r\n\t});\r\n\r\n\t// it(\"playground2\", () => {\r\n\t// \tcy.mount(<Component />);\r\n\t// \tcy.get(\"div\").contains(\"You aint a bro\");\r\n\t// });\r\n});\r\n"
+      ]
+    },
+    "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
+    "hash": "73af9b6d6e0034f538ceae206c11b5747920b363"
+  }
+}
